@@ -1,10 +1,19 @@
+<?php
+session_start();
+
+if (isset($_SESSION['usuario'])) {
+    $nome = $_SESSION['usuario']['nome'];
+    $email = $_SESSION['usuario']['email'];
+    $idade = $_SESSION['usuario']['idade'];
+}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Esportiva | Sport Zone</title>
-    <script src="scripts/localização.js" defer></script>
 </head>
 <body>
     <header>
@@ -49,41 +58,45 @@
     </header>
 
     <main>
-        <section class="quem-somos">
-            <h2>Bem-vindo à Sport Zone</h2>
-                <p>Bem-vindo à Sport Zone, sua loja de produtos esportivos de confiança! Somos especializados em oferecer uma ampla gama de equipamentos...</p>
-   
-            <h3>Nossa Missão</h3>
-                <p>Nosso objetivo é promover a prática esportiva ao fornecer produtos de alta qualidade, ajudando nossos clientes a se manterem ativos e saudáveis...</p>
-   
-            <h3>Nossos Valores</h3>
-                <ul>
-                    <li><img src="qualidade-icon.png" alt="Qualidade"> Qualidade: Produtos das melhores marcas do mundo esportivo.</li>
-                    <li><img src="inovacao-icon.png" alt="Inovação"> Inovação: Sempre à frente com as últimas tendências e tecnologias.</li>
-                    <li><img src="atendimento-icon.png" alt="Atendimento"> Atendimento: Uma equipe preparada para atender suas necessidades esportivas.</li>
-                </ul>
-   
-            <h3>Nosso Compromisso</h3>
-                <p>Na Sport Zone, nossa prioridade é apoiar sua jornada esportiva, oferecendo não apenas produtos, mas também uma experiência de compra única e confiável...</p>
-        </section>
+        <form method="POST" action="../index.html">
+            <label for="name">Nome</label>
+            <input type="text" name="name" value="<?php echo $nome?>">
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" value="<?php echo $email?>">
+    
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" value="<?php echo $idade?>">
+    
+            <input type="submit" value="Confirmar">
+        </form>
+    </main>
 
-        <footer>
-            <div class="localizacao">
-                <p onclick="openGoogleMaps()">Acesse nossa localização</p>
-                <img src="" alt="Vetor de Localização">
-            </div>
-    
-            <div class="entre_contato" onclick="window.location.href='entre_contato.html'">
-                <p>Entre em Contanto</p>
-            </div>
-    
-            <div class="compartilhe">
-    
-            </div>
-    
-            <div class="cartoes">
-    
-            </div>
-        </footer>
+    <footer>
+        <div class="localizacao">
+            <p onclick="openGoogleMaps()">Acesse nossa localização</p>
+            <img src="" alt="Vetor de Localização">
+        </div>
+
+        <div class="entre_contato" onclick="window.location.href='entre_contato.html'">
+            <p>Entre em Contanto</p>
+        </div>
+
+        <div class="compartilhe">
+            <img src="" alt="icone_instagram">
+            <img src="" alt="icone_whastapp">
+            <img src="" alt="icone_fecebook">
+        </div>
+
+        <div class="cartoes">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+        </div>
+    </footer>
 </body>
 </html>
