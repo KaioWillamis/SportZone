@@ -7,8 +7,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $idade = $_POST['idade'];
 
     if(validacaoNome($nome) == false || validacaoEmail($email) == false || validacaoidade($idade) == false){
-        echo "você digitou algo errado";
+        indicarDeErro($nome,$email,$idade);
     }
+
     else{
         $_SESSION['usuario'] = [
             'nome' => $nome,
