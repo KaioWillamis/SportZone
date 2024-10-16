@@ -1,6 +1,5 @@
 <?php
 include "funcoes.php";
-session_start();
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nome = $_POST['name'];
@@ -10,7 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if(validacaoNome($nome) == false || validacaoEmail($email) == false || validacaoidade($idade) == false){
         echo "você digitou algo errado";
     }
-
     else{
         $_SESSION['usuario'] = [
             'nome' => $nome,
@@ -18,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             'idade' => $idade
         ];
 
-        header("location: confirma.php");
+        header("location: ../index.html");
         exit();
     }
 }

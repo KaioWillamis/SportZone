@@ -58,7 +58,7 @@ if (isset($_SESSION['usuario'])) {
     </header>
 
     <main>
-        <form method="POST" action="../index.html">
+        <form method="POST" action="validacao2.php">
             <label for="name">Nome</label>
             <input type="text" name="name" value="<?php echo $nome?>">
     
