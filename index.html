@@ -6,15 +6,20 @@
     <title>Loja Esportiva | Sport Zone</title>
     <link rel="stylesheet" href="style/index.css">
     <script src="scripts/localização.js" defer></script>
+    <script src="scripts/slideshow.js"></script>
 </head>
 <body>
     <header>
-        <div>
-            <img src="" alt="Logo da Sport Zone">
-        </div>
-        <div class="barra_pesquisa">
-            <input type="text" name="pesquisa" id="pesquisa" placeholder="O que você está procurando?">
-            <div>
+        <div class="cabecalho">
+            <div class="Logo">
+                <img src="" alt="Logo da Sport Zone">
+            </div>
+
+            <div class="barra_pesquisa">
+                <input type="text" name="pesquisa" id="pesquisa" placeholder="O que você está procurando?">
+            </div>
+
+            <div class="lupa">
                 <img src="" alt="Lupa de Pesquisa">
             </div>
         </div>
@@ -42,10 +47,12 @@
                     </ul>
             </div>
 
-            <button button onclick="window.location.href='futebol.html'">Futebol</button>
-            <button button onclick="window.location.href='corrida.html'">Corrida</button>
-            <button button onclick="window.location.href='sportzone.html'">Sport Zone</button>
-            <button>Dark Mode</button>
+            <div class="butoes_nav">
+                <button button onclick="window.location.href='futebol.html'">Futebol</button>
+                <button button onclick="window.location.href='corrida.html'">Corrida</button>
+                <button button onclick="window.location.href='sportzone.html'">Sport Zone</button>
+                <button>Dark Mode</button>
+            </div>
         </nav>
     </header>
 

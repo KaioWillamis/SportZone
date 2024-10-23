@@ -9,25 +9,71 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
+    margin: 0;
+    height: 100vh;
 }
 
-header{
+body > header{
     width: 100%;
-    background-color: rgb(184, 184, 184);
+    height: 150px;
+    background-color: rgb(199, 199, 199);
     margin: 2px;
 }
 
-nav{
-    background-color: rgb(90, 90, 90);
+body > header > .cabecalho{
+    width: 100%;
+    height: 65%;
+    display: flex;
+}
+
+body > header > .cabecalho > .logo{
+    width: 33%;
+    height: 100%;
+}
+
+body > header > .cabecalho > .barra_pesquisa{
+    width: 33%;
+}
+
+body > header > .cabecalho > .barra_pesquisa > input{
+    width: 100%;
+    height: 45%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 1px 2px 3px rgba(33, 33, 33, 0.384);
+    padding: 3%;
+}
+
+body > header > .cabecalho > .lupa{
+    width: 33%;
+}
+
+/* estilizando o nav*/
+
+body > header > nav{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    background-color: aqua;
+}
+
+body > header > nav > .categorias{
+    width: 20%;
+    height: 100%;
+}
+
+body > header > nav > .botoes_nav{
+    width: 80%;
+    background-color: black;
+}
+
+body > header > nav > .botoes_nav > button{
+    height: 100%;
 }
 
 main{
     width: 100%;
     background-color: rgb(184, 184, 184);
-}
-
-main > .carrossel{
-    color: rgb(255, 0, 0);
 }
 
 /*estilizando carrossel*/
@@ -51,6 +97,7 @@ main > .carrossel{
 .slide{
     width: 20%;
     position: relative;
+    transition: 2s;
 }
 
 .slide > img{
