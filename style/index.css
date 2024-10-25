@@ -11,172 +11,195 @@ body {
     font-size: 16px;
     margin: 0;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 body > header{
     width: 100%;
-    height: 150px;
+    height: 130px;
     background-color: rgb(199, 199, 199);
     margin: 2px;
 }
 
 body > header > .cabecalho{
     width: 100%;
-    height: 65%;
+    height: 70%;
     display: flex;
+    flex-direction: row;
 }
 
-body > header > .cabecalho > .logo{
-    width: 33%;
+body > header > .cabecalho > .logo_header{
+    width: 25%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body > header > .cabecalho > .logo_header > img{
+    width: 55%;
 }
 
 body > header > .cabecalho > .barra_pesquisa{
-    width: 33%;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 body > header > .cabecalho > .barra_pesquisa > input{
-    width: 100%;
+    width: 75%;
     height: 45%;
-    border-radius: 20px;
+    border-radius: 20px 0px 0px 20px;
     border: none;
     box-shadow: 1px 2px 3px rgba(33, 33, 33, 0.384);
     padding: 3%;
 }
 
-body > header > .cabecalho > .lupa{
-    width: 33%;
+body > header > .cabecalho > .barra_pesquisa > .div_lupa{
+    width: 10%;
+    height: 47%;
+    background-color: #ffffff;
+    border-radius: 0px 20px 20px 0px;
+    border: none;
+    box-shadow: 1px 2px 3px rgba(33, 33, 33, 0.384);
 }
 
 /* estilizando o nav*/
 
 body > header > nav{
     width: 100%;
-    height: 35%;
+    height: 30%;
     display: flex;
-    background-color: aqua;
+    flex-direction: row;
 }
 
 body > header > nav > .categorias{
     width: 20%;
     height: 100%;
+    background-color: rgb(56, 38, 38);
+    display: flex;
+    flex-direction: row;
 }
 
-body > header > nav > .botoes_nav{
+body > header > nav > .categorias > .detalhes_nav{
+    width: 30%;
+}
+
+body > header > nav > .categorias > .p_nav{
+    width: 70%;
+}
+
+body > header > nav > .categorias > .p_nav > p{
+    text-align: center;
+}
+
+body > header > nav > .categorias > .p_nav > ul{
+    display: none;
+
+}
+
+body > header > nav > .butoes_nav{
     width: 80%;
-    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-body > header > nav > .botoes_nav > button{
+body > header > nav > .butoes_nav > button{
+    width: 20%;
     height: 100%;
+    margin-left: 1%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
 }
+
+/* Estilos do botão dark mode */
+body > header > nav > .butoes_nav > .dark_mode {
+    width: 20%;
+    height: 100%;
+    margin-left: 1%;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgb(137, 137, 137);
+    display: flex;
+}
+
+body > header > nav > .butoes_nav > .dark_mode > .p_dark_mode {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+body > header > nav > .butoes_nav > .dark_mode > .button_dark_mode {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body > header > nav > .butoes_nav > .dark_mode > .button_dark_mode > .bnt_dark {
+    width: 80px;
+    height: 35px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+body > header > nav > .butoes_nav > .dark_mode > .button_dark_mode > .bnt_dark:before {
+   content: '';
+   position: absolute;
+   width: 28px;
+   height: 28px;
+   background-color: white;
+   border-radius: 50%;
+   top: 50%;
+   left: 3px;
+   transform: translateY(-50%);
+   transition: left 0.3s ease;
+}
+
+/* Mover a bolinha para a direita quando ativado */
+body > header > nav > .butoes_nav > .dark_mode > .button_dark_mode > .bnt_dark.active:before {
+    left: calc(100% - 31px);
+}
+
 
 main{
     width: 100%;
-    background-color: rgb(184, 184, 184);
+    display: flex;
+    flex-direction: column;
 }
 
-/*estilizando carrossel*/
 .carrossel{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
+    background-color: black;
 }
 
-.slides{
+body > main > section{
+    background-color: aqua;
+    margin: 2.5% 10%;
+    height: 400px;
+}
+
+body > main > .oferta_dia > .titulo_section{
     width: 100%;
-    height: 400px;
-    display: flex;
+    height: 10%;
+    background-color: rgb(144, 144, 144);
 }
 
-.slides > input{
-    display: none;
-}
-
-.slide{
+body > main > section> article{
     width: 20%;
-    position: relative;
-    transition: 2s;
-}
-
-.slide > img{
-    width: 800px;
-}
-
-.manual-navetaion{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    height: 70%;
+    margin: 3%;
+    background-color: rgb(227, 59, 59);
     display: flex;
-    justify-content: center;
+    flex-direction: row;
 }
-
-.manual-bnt{
-    border: 2px solid #fff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.manual-bnt:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-bnt:hover{
-    background-color: #fff;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-
-.navitaion-auto > div{
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto > div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: white;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: white;
-}
-
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: white;
-}
-
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: white;
-}
-/* Fim do estilo do carrossel*/

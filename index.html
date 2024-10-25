@@ -4,54 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Esportiva | Sport Zone</title>
-    <link rel="stylesheet" href="style/index.css">
+    <link id="estilobranco" rel="stylesheet" href="style/index.css">
     <script src="scripts/localização.js" defer></script>
     <script src="scripts/slideshow.js"></script>
+    <script src="scripts/darkmode.js"></script>
 </head>
 <body>
     <header>
         <div class="cabecalho">
-            <div class="Logo">
-                <img src="" alt="Logo da Sport Zone">
+            <div class="logo_header">
+                <img src="img/logo/logo_preta.png" alt="Logo da Sport Zone">
             </div>
 
             <div class="barra_pesquisa">
                 <input type="text" name="pesquisa" id="pesquisa" placeholder="O que você está procurando?">
-            </div>
-
-            <div class="lupa">
-                <img src="" alt="Lupa de Pesquisa">
+                <div class="div_lupa">
+                    <img src="" alt="Lupa de Pesquisa">
+                </div>
             </div>
         </div>
 
         <nav>
             <div class="categorias">
-                <p>Categorias</p>
-                    <ul>
-                        <li>
-                            <button onclick="window.location.href='futebol.html'">Futebol</button>
-                            <ul class="submenu">
-                                <li><button onclick="window.location.href='camisas_time.html'">Camisas de Time</button></li>
-                                <li><button onclick="window.location.href='shorts_time.html'">Shorts</button></li>
-                                <li><button onclick="window.location.href='chuteiras.html'">Chuteiras</button></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <button button onclick="window.location.href='corrida.html'">Corrida</button>
-                            <ul class="submenu">
-                                <li><button button onclick="window.location.href='camisetas.html'">Camisetas</button></li>
-                                <li><button button onclick="window.location.href='shorts.html'">Shorts</button></li>
-                                <li><button button onclick="window.location.href='tenis.html'">Tênis</button></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <div class="detalhes_nav">
+                    <img src="" alt="detalhes">
+                </div>
+                <div class="p_nav">
+                    <p>Categorias</p>
+                        <ul>
+                            <li class="menu_item">
+                                <button onclick="window.location.href='futebol.html'">Futebol</button>
+                                <ul class="submenu">
+                                    <li><button onclick="window.location.href='camisas_time.html'">Camisas de Time</button></li>
+                                    <li><button onclick="window.location.href='shorts_time.html'">Shorts</button></li>
+                                    <li><button onclick="window.location.href='chuteiras.html'">Chuteiras</button></li>
+                                </ul>
+                            </li>
+                            <li class="menu_item">
+                                <button button onclick="window.location.href='corrida.html'">Corrida</button>
+                                <ul class="submenu">
+                                    <li><button button onclick="window.location.href='camisetas.html'">Camisetas</button></li>
+                                    <li><button button onclick="window.location.href='shorts.html'">Shorts</button></li>
+                                    <li><button button onclick="window.location.href='tenis.html'">Tênis</button></li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
             </div>
 
             <div class="butoes_nav">
                 <button button onclick="window.location.href='futebol.html'">Futebol</button>
                 <button button onclick="window.location.href='corrida.html'">Corrida</button>
-                <button button onclick="window.location.href='sportzone.html'">Sport Zone</button>
-                <button>Dark Mode</button>
+                <button button onclick="window.location.href='sportzone.html'">Sobre Nós</button>
+                <div class="dark_mode">
+                    <div class="p_dark_mode">
+                        <p>Dark Mode</p>
+                    </div>
+                    <div class="button_dark_mode">
+                        <div class="bnt_dark" onclick="togglebutton()">
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -97,7 +110,10 @@
         </div>
     
         <section class="oferta_dia">
-            <article class="oferta_categoria_futebol" button onclick="window.location.href='#'">
+            <div class="titulo_section">
+                <p>Oferta do Dia</p>
+            </div>
+            <article class="produtos" button onclick="window.location.href='#'">
                 <img src="" alt="produtos">
                 <aside>
                     <p>bla bla bla</p>
