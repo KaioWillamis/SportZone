@@ -185,21 +185,79 @@ main{
 
 body > main > section{
     background-color: aqua;
-    margin: 2.5% 10%;
+    margin: 2% 10%;
     height: 400px;
+    display: flex;
+    flex-direction: column;
 }
 
-body > main > .oferta_dia > .titulo_section{
+body > main > section > .titulo_section{
     width: 100%;
     height: 10%;
     background-color: rgb(144, 144, 144);
 }
 
-body > main > section> article{
-    width: 20%;
-    height: 70%;
-    margin: 3%;
+body > main > section> .conteudo_article{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+}
+
+body > main > section> .conteudo_article > article{
+    width: 28%;
+    height: 88%;
+    margin: 1.5%;
     background-color: rgb(227, 59, 59);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+body > main > section> .conteudo_article > article > img{
+    width: 95%;
+    height: 80%;
+    background-color: black;
+}
+
+body > footer{
+    width: 100%;
+    background-color: rgb(124, 124, 202);
+    display: flex;
+    flex-direction: column;
+}
+
+body > footer > .divisao_footer{
+    width: 100%;
+    height: 150px;
+    background-color: azure;
     display: flex;
     flex-direction: row;
 }
+
+body > footer > .divisao_footer > .localizacao{
+    width: 33%;
+    height: 100%;
+    background-color: aqua;
+}
+
+body > footer > .divisao_footer > .entre_contato{
+    width: 33%;
+    height: 100%;
+    background-color: rgb(55, 255, 255);
+}
+
+body > footer > .divisao_footer > .compartilhe{
+    width: 34%;
+    height: 100%;
+    background-color: rgb(117, 255, 255);
+}
+
+body > footer > .divisao_footer2{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 115, 115);
+}
+
