@@ -8,7 +8,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $idade = $_POST['idade'];
 
     if(validacaoNome($nome) == false || validacaoEmail($email) == false || validacaoidade($idade) == false){
-        indicarDeErro($nome,$email,$idade);
+        header("Location: entre_contato.html?erro=1");
+        exit();
     }
 
     else{
