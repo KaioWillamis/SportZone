@@ -15,10 +15,23 @@ function toggleDarkMode() {
 document.addEventListener("DOMContentLoaded", () => {
     const theme = localStorage.getItem("theme");
     const link = document.getElementById("estilobranco");
+    const currentPage = window.location.pathname.split("/").pop(); // Obtém o nome da página atual
 
-    if (theme === "dark") {
-        link.setAttribute("href", "style/darkmode.css");
+    // Checa se estamos em uma das páginas específicas e aplica o tema
+    const pagesWithTheme = ["futebol.html", "corrida.html", "sportzone.html"];
+    if (pagesWithTheme.includes(currentPage)) {
+        if (theme === "dark") {
+            link.setAttribute("href", "style/darkmode.css");
+        } else {
+            link.setAttribute("href", "style/index.css");
+        }
     } else {
-        link.setAttribute("href", "style/index.css");
+        // Para todas as outras páginas, aplica o tema salvo no localStorage
+        if (theme === "dark") {
+            link.setAttribute("href", "style/darkmode.css");
+        } else {
+            link.setAttribute("href", "style/index.css");
+        }
     }
 });
+

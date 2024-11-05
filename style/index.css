@@ -173,6 +173,7 @@ main{
 
 .carousel-container {
     display: flex;
+    width: 100%;
 }
 
 .carousel-item {
@@ -180,6 +181,7 @@ main{
     height: 400px;
     display: none;
     object-fit: cover; /* Para que a imagem se ajuste ao espaço sem distorções */
+    padding: 50px;
 }
 
 /* Botões de navegação */
