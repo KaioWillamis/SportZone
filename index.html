@@ -8,6 +8,7 @@
     <script src="scripts/localização.js" defer></script>
     <script src="slideshow.js"></script>
     <script src="darkmode.js"></script>
+    <script src="modal.js"></script>
 </head>
 <body>
     <header>
@@ -32,10 +33,6 @@
                 <div class="dark_mode" onclick="toggleDarkMode()">
                     <div class="p_dark_mode">
                         <p>Dark Mode</p>
-                    </div>
-                    <div class="button_dark_mode">
-                        <div class="bnt_dark" onclick="togglebutton()">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -64,24 +61,28 @@
                 <img src="" alt="produtos">
                 <aside>
                     <p>bla bla bla</p>
+                    <button class="openmodal">Comprar Produto</button>
                 </aside>
             </article>
             <article class="produtos" button onclick="window.location.href='#'">
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             <article class="produtos" button onclick="window.location.href='#'">
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             <article class="produtos" button onclick="window.location.href='#'">
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             </div>
@@ -96,24 +97,28 @@
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             <article class="produtos" button onclick="window.location.href='#'">
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             <article class="produtos" button onclick="window.location.href='#'">
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             <article class="produtos" button onclick="window.location.href='#'">
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             </div>
@@ -128,28 +133,40 @@
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             <article class="produtos" button onclick="window.location.href='#'">
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             <article class="produtos" button onclick="window.location.href='#'">
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             <article class="produtos" button onclick="window.location.href='#'">
                 <img src="" alt="Imagem_Produto">
                 <aside>
                     <p>bla bla bla</p>
+                    <button>Comprar Produto</button>
                 </aside>
             </article>
             </div>
         </section>
+        
+        <dialog id="dialog">
+            <div id="modalConfirm">
+                    <p>Você quer confirmar a compra deste produto?</p>
+                    <button id="confirmButton">Confirmar</button>
+                    <button id="cancelButton">Cancelar</button>
+            </div>
+        </dialog>
     </main>
 
     <footer>
@@ -161,7 +178,7 @@
 
             <div class="entre_contato">
                 <p>Entre em contato com o Dono do Site</p>
-                <button onclick="window.location.href='entre_contato.html'"><p>Entrar em Contato</p></button>
+                <button onclick="window.location.href='entre_contato.php'"><p>Entrar em Contato</p></button>
             </div>
 
             <div class="compartilhe">

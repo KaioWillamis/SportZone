@@ -54,37 +54,57 @@
             <input type="number" name="idade" id="idade">
 
             <input type="submit" value="Enviar" class="enviar">
+            <?php
+            if (isset($_GET['erro']) && $_GET['erro'] == "1") {
+            ?>
+                <div class="mensagem">
+                    <?php
+                    echo "Você informou algo errado, por favor insira os dados novamente!";
+                    ?>
+                </div>
+            <?php
+            }
+            elseif(isset($_GET['erro']) && $_GET['erro'] == "2"){
+            ?>
+            <div class="mensagem">
+                <?php
+                echo "Você deixou algum campo em branco!";
+                ?>
+            </div>
+            <?php
+            }
+            ?>
         </form>
     </main>
 
     <footer>
         <div class="divisao_footer">
             <div class="localizacao">
-                <p onclick="openGoogleMaps()">Acesse nossa localização</p>
-                <img src="" alt="Vetor de Localização">
+                <p>Acesse nossa localização</p>
+                <button onclick="openGoogleMaps()"><p>Aperte Aqui</p> <img src="img/icones/localizacao.png" alt="icone_de_localização"></button>
             </div>
 
-            <div class="entre_contato" onclick="window.location.href='entre_contato.html'">
-                <p>Entre em Contanto</p>
-                <img src="" alt="icone contato">
+            <div class="entre_contato">
+                <p>Entre em contato com o Dono do Site</p>
+                <button onclick="window.location.href='entre_contato.php'"><p>Entrar em Contato</p></button>
             </div>
 
             <div class="compartilhe">
-                <a href="https://www.instagram.com/computacaounifavip_/" target="_blank"><img src="" alt="icone_instagram"></a>
-                <a href="https://wa.me/5581995565707" target="_blank"><img src="" alt="icone_whastapp"></a>
-                <a href="https://www.youtube.com/channel/UCOYJSpxWCWphWbT3lw0bwbw" target="_blank"><img src="" alt="icone_youtube"></a>
+                <a href="https://www.instagram.com/computacaounifavip_/" target="_blank"><img src="img/icones/instagram.png" alt="icone_instagram"></a>
+                <a href="https://wa.me/5581995565707" target="_blank"><img src="img/icones/whast.png" alt="icone_whastapp"></a>
+                <a href="https://www.youtube.com/channel/UCOYJSpxWCWphWbT3lw0bwbw" target="_blank"><img src="img/icones/youtube.png" alt="icone_youtube"></a>
             </div>
         </div>
 
         <div class="divisao_footer2">
             <div class="cartoes">
-                <img src="" alt="icone">
-                <img src="" alt="icone">
-                <img src="" alt="icone">
-                <img src="" alt="icone">
-                <img src="" alt="icone">
-                <img src="" alt="icone">
-                <img src="" alt="icone">
+                <img src="img/cartoes/santander.png" alt="icone">
+                <img src="img/cartoes/express.png" alt="icone">
+                <img src="img/cartoes/nunbak.png" alt="icone">
+                <img src="img/cartoes/visa.png" alt="icone">
+                <img src="img/cartoes/mastercard.png" alt="icone">
+                <img src="img/cartoes/hipercard.png" alt="icone">
+                <img src="img/cartoes/pix.png" alt="icone_pix">
             </div>
         </div>
     </footer>

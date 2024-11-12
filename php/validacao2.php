@@ -7,7 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $idade = $_POST['idade'];
 
     if(validacaoNome($nome) == false || validacaoEmail($email) == false || validacaoidade($idade) == false){
-        indicarDeErro($nome,$email,$idade);
+        header("Location: confirma.php?erro=1");
+        exit();
     }
 
     else{
