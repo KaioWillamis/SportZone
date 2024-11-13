@@ -64,11 +64,58 @@ body > header > .cabecalho > .barra_pesquisa > input{
 
 body > header > .cabecalho > .barra_pesquisa > .div_lupa{
     width: 10%;
-    height: 47%;
+    height: 45%;
     background-color: #ffffff;
     border-radius: 0px 20px 20px 0px;
     border: none;
     box-shadow: 1px 2px 3px rgba(33, 33, 33, 0.384);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body > header > .cabecalho > .barra_pesquisa > .div_lupa > img{
+    width: 45%;
+    height: 60%;
+}
+
+body > header > .cabecalho > .icopessoa_header{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+body > header > .cabecalho > .icopessoa_header > img{
+    width: 15%;
+    height: 45%;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+body > header > .cabecalho > .icopessoa_header > img:hover{
+    transform: scale(1.1);
+}
+
+body > header > .cabecalho > .icocarrinho_header{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body > header > .cabecalho > .icocarrinho_header > img{
+    width: 15%;
+    height: 45%;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+body > header > .cabecalho > .icocarrinho_header > img:hover{
+    transform: scale(1.1);
 }
 
 /* estilizando o nav*/

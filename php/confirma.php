@@ -22,29 +22,32 @@ if (isset($_SESSION['usuario'])) {
     <header>
         <div class="cabecalho">
             <div class="logo_header">
-                <img src="../img/logo/logo_preta.png" alt="Logo da Sport Zone" button onclick="window.location.href='index.html'">
+                <img src="../img/logo/logo_preta.png" alt="Logo da Sport Zone" button onclick="window.location.href='../index.html'">
             </div>
 
             <div class="barra_pesquisa">
                 <input type="text" name="pesquisa" id="pesquisa" placeholder="O que você está procurando?">
                 <div class="div_lupa">
-                    <img src="" alt="Lupa de Pesquisa">
+                    <img src="../img/icones/lupa.png" alt="Lupa de Pesquisa">
                 </div>
+            </div>
+
+            <div class="icopessoa_header">
+                <img src="../img/icones/pessoa.png" alt="icone_pessoa">
+            </div>
+
+            <div class="icocarrinho_header">
+                <img src="../img/icones/carrinho.png" alt="icone_carrinho">
             </div>
         </div>
 
         <nav>
             <div class="butoes_nav">
-                <button button onclick="window.location.href='futebol.html'">Futebol</button>
-                <button button onclick="window.location.href='corrida.html'">Corrida</button>
-                <button button onclick="window.location.href='sportzone.html'">Sobre Nós</button>
+                <button button onclick="window.location.href='../futebol.html'">Futebol</button>
+                <button button onclick="window.location.href='../corrida.html'">Corrida</button>
                 <div class="dark_mode" onclick="toggleDarkMode()">
                     <div class="p_dark_mode">
                         <p>Dark Mode</p>
-                    </div>
-                    <div class="button_dark_mode">
-                        <div class="bnt_dark" onclick="togglebutton()">
-                        </div>
                     </div>
                 </div>
             </div>
