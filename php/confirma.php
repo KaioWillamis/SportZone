@@ -15,6 +15,8 @@ if (isset($_SESSION['usuario'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Esportiva | Sport Zone</title>
     <link rel="stylesheet" href="../style/entrecontanto.css">
+    <link rel="shortcut icon" href="../img/logo/ico2.png" type="image/x-icon">
+    <script src="../scripts/localização.js" defer></script>
 </head>
 <body>
     <header>
@@ -85,7 +87,7 @@ if (isset($_SESSION['usuario'])) {
 
             <div class="entre_contato">
                 <p>Entre em contato com o Dono do Site</p>
-                <button onclick="window.location.href='entre_contato.php'"><p>Entrar em Contato</p></button>
+                <button onclick="window.location.href='../entre_contato.php'"><p>Entrar em Contato</p></button>
             </div>
 
             <div class="compartilhe">

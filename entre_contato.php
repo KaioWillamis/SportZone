@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja Esportiva | Sport Zone</title>
     <link rel="stylesheet" href="style/entrecontanto.css">
+    <link rel="shortcut icon" href="img/logo/ico2.png" type="image/x-icon">
     <script src="scripts/localização.js" defer></script>
 </head>
 <body>

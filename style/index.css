@@ -117,11 +117,12 @@ body > header > nav > .butoes_nav > .dark_mode {
     border: none;
     font-size: 20px;
     font-weight: 600;
-    background-color: rgb(233, 233, 233);
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    cursor: pointer;
+    transition: 0.7s;
 }
 
 body > header > nav > .butoes_nav > .dark_mode > .p_dark_mode {
@@ -129,6 +130,11 @@ body > header > nav > .butoes_nav > .dark_mode > .p_dark_mode {
     text-align: center;
     align-items: center;
     justify-content: center;
+    color: white;
+}
+
+body > header > nav > .butoes_nav > .dark_mode:hover{
+    transform: scale(1.1);
 }
 
 main{
@@ -210,7 +216,7 @@ body > main > section> .conteudo_article > article{
     width: 28%;
     height: 88%;
     margin: 1.5%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 10px;
     box-shadow: 1px 2px 5px rgba(173, 173, 173, 0.753);
     display: flex;
@@ -222,12 +228,42 @@ body > main > section> .conteudo_article > article > img{
     width: 90%;
     height: 70%;
     margin-top: 5px;
+    background-color: white;
 }
 
 body > main > section> .conteudo_article > article > aside{
     width: 95%;
     height: 29%;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main > section> .conteudo_article > article > aside .descricao_produtos{
+    width: 100%;
+    height: 40%;
+}
+
+body > main > section> .conteudo_article > article > aside .butao_comprar{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body > main > section> .conteudo_article > article > aside .butao_comprar > button{
+    width: 75%;
+    height: 55%;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    transition: 0.7s;
+}
+
+body > main > section> .conteudo_article > article > aside .butao_comprar > button:hover{
+    transform: scale(1.1);
 }
 
 body > footer{
@@ -360,4 +396,28 @@ body > footer > .divisao_footer2 > .cartoes > img{
     padding-left: 10px;
 }
 
+#modalConfirmacao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #modalContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #modalContent button {
+    margin: 10px;
+    padding: 10px 20px;
+  }
 

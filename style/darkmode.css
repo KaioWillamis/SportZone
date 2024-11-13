@@ -116,52 +116,27 @@ body > header > nav > .butoes_nav > .dark_mode {
     border: none;
     font-size: 20px;
     font-weight: 600;
-    background-color: rgb(137, 137, 137);
-    display: flex;
-}
-
-body > header > nav > .butoes_nav > .dark_mode > .p_dark_mode {
-    width: 50%;
-    height: 100%;
-    text-align: center;
-}
-
-body > header > nav > .butoes_nav > .dark_mode > .button_dark_mode {
-    width: 50%;
-    height: 100%;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-body > header > nav > .butoes_nav > .dark_mode > .button_dark_mode > .bnt_dark {
-    width: 80px;
-    height: 35px;
-    border: 3px solid #fff;
-    border-radius: 10px;
-    position: relative;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    box-shadow: 0 0 5px 5px rgba(178, 178, 178, 0.168);
+    transition: 0.7s;
+    
 }
 
-body > header > nav > .butoes_nav > .dark_mode > .button_dark_mode > .bnt_dark:before {
-   content: '';
-   position: absolute;
-   width: 28px;
-   height: 28px;
-   background-color: white;
-   border-radius: 50%;
-   top: 50%;
-   left: 3px;
-   transform: translateY(-50%);
-   transition: left 0.3s ease;
+body > header > nav > .butoes_nav > .dark_mode > .p_dark_mode {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
 }
 
-/* Mover a bolinha para a direita quando ativado */
-body > header > nav > .butoes_nav > .dark_mode > .button_dark_mode > .bnt_dark.active:before {
-    left: calc(100% - 31px);
+body > header > nav > .butoes_nav > .dark_mode:hover{
+    transform: scale(1.1);
 }
-
 
 main{
     width: 100%;
@@ -265,7 +240,36 @@ body > main > section> .conteudo_article > article > img{
 body > main > section> .conteudo_article > article > aside{
     width: 95%;
     height: 29%;
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+body > main > section> .conteudo_article > article > aside .descricao_produtos{
+    width: 100%;
+    height: 40%;
+}
+
+body > main > section> .conteudo_article > article > aside .butao_comprar{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body > main > section> .conteudo_article > article > aside .butao_comprar > button{
+    width: 75%;
+    height: 55%;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    transition: 0.7s;
+}
+
+body > main > section> .conteudo_article > article > aside .butao_comprar > button:hover{
+    transform: scale(1.1);
 }
 
 body > footer{
